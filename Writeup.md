@@ -23,7 +23,8 @@ In this project we implement Model Predictive Control to drive the car around th
 - X = cos(psi) * (ptsx[i] - x) + sin(psi) * (ptsy[i] - y);
 - Y =  -sin(psi) * (ptsx[i] - x) + cos(psi) * (ptsy[i] - y); 
 
-
+### MPC with Latency
+* The command sent from actuators to the vehicles have a latency delay of 100 ms, hence the values of the state varibles was first initialized then predicted 100ms into the future and passed as intial state to the state variable. This method took care of the latency delay issue thus encountered in the model predictive control. 
 
 
 
