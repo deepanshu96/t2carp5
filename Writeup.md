@@ -15,9 +15,13 @@ In this project we implement Model Predictive Control to drive the car around th
 - epsi[t+1] = psi[t] - psides[t] + v[t] * delta[t] / Lf * dt
 
 ### Timestep Length
-* N=10 and dt = 0.1 was chosen as it was mentioned in the course material. Also other values were tried but the previous mentioned values best suited the model.
+* N=10 and dt = 0.1 was chosen as it was mentioned in the course material. Also other values were tried but the previously mentioned values best suited the model.
 
+### Polynomial Fitting 
+* The coordinates were transformed to vehicles coordinate system and then a third order polynomial was fitted to the waypoints. The following transformation equations were used :-
 
+- X = cos(psi) * (ptsx[i] - x) + sin(psi) * (ptsy[i] - y);
+- Y =  -sin(psi) * (ptsx[i] - x) + cos(psi) * (ptsy[i] - y); 
 
 
 
