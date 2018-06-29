@@ -1,7 +1,7 @@
 # t2carp5
 * [Source Files](https://github.com/deepanshu96/t2carp5/tree/master/src)
 * [Writeup Files](https://github.com/deepanshu96/t2carp5/blob/master/Writeup.md)
-* Video Link
+* [Video Link](https://youtu.be/YJqGxD2LrlI)
 
 
 # CarND-Controls-MPC
